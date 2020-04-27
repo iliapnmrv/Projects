@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(67, 214, 207);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+}
+.daynight{
+    width: 500px;
+    height: 200px;
+    margin: 0px auto;
+    margin-top: 100px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: black;
+    color: white;
+}
+h2{
+    margin: 0px auto;
+    width: 149px;
+}
+.time{
+    margin-left: 76px;
+    font-size: 10px;
+}

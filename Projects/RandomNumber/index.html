@@ -1,0 +1,36 @@
+<!--Листинг 2.7-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Угадайте число</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/my.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body bgcolor="#FFDCDC">
+        <div class="guessNumber">
+            <h2>Угадайте число</h2>
+            <p>Введите число, которое вы считаете верным</p>
+            <div class="form">
+                <form name="form0">
+                    <h3>Ввести кастомные значения</h3>
+                    Введите минимальное число
+                    <input class="text" type="text" size="10" name="min"><hr>
+                    Введите максимальное число
+                    <input class="text" type="text" size="10" name="max"><hr>
+                    <input type="button" value="Внести в базу данных" onclick="letTest(form0)"><br>
+                </form>
+            </div>
+            <form name="form1">
+                <input type="text" size="10" name="num1"><br>
+                <!--тут не нужны стили пока что--> 
+                <input type="button" value="Угадать" onclick="func(form1)">
+            </form>
+            <div id="chislo">
+            </div>
+        </div>
+    </body>
+</html>

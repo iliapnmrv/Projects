@@ -1,0 +1,46 @@
+body{
+    background-color: rgba(248, 248, 248, 0);
+    margin: 0px;
+}
+.project{
+    height: 1000px;
+    width: 1000px;
+    margin: 0px auto;
+    border: 1px solid red;
+    position: relative;
+}
+.block{
+    width: 500px;
+    border: 1px solid green;
+    margin: 0px auto;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.title{
+    width: 200px;
+    text-align: center;
+    margin: 0px auto;
+    font-size: 20px;
+    font-family: monospace;
+}
+img.add{
+    border: 1px solid blue;
+    margin: 0px auto;
+    width: 50px;
+    position: absolute;
+    top: 533px;
+    right: 30px;
+}
+input.remove{
+    border: 1px solid blue;  
+    margin: 0px auto;
+}
+textarea{
+    max-height: 100px;
+    max-width: 100px;
+    float: left;
+    resize: none;
+}
+.green{
+    background-color: green;
+}
