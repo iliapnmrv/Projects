@@ -7,25 +7,30 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="banner">
+        <div class="center" id="show" >Продукт в ранней разработке</div>
+    </header>
     <div class="project" id="block">
         <!--Примеры блоков-->
         <div class="line">
-            <!--Checkbox block-->
-            <div class="checkbox"> 
-                <input type="checkbox" id="scales" name="scales"  onclick="checkbox()">
-                <!--<label for="scales">Scales</label>-->
-            </div>
-            <!--1 задание-->
-            <div class="block" id="one">
-                <div class="title">Я блок</div>
-                <textarea placeholder="Создайте заметку нажмите Alt + N для доступа к полю заполнения" accesskey="n" name="" id=""></textarea>
+            <div id="one">
+                <!--Checkbox block-->
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <!--1 задание-->
+                <div class="block">
+                    <div class="title">Я блок</div>
+                    <textarea placeholder="Создайте заметку нажмите Alt + N для доступа к полю заполнения" accesskey="n" name="" id=""></textarea>
+                </div>
             </div>
         </div>
             <!--Кнопка добавить-->        
         <img class="add" src="img/add.png" alt="" title="Добавить еще" onclick="add()">
         <input type="button" class="" value="Удалить" onclick="remove()">
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/my.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </body>
 </html>
