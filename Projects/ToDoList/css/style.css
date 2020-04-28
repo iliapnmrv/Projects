@@ -1,6 +1,7 @@
 body{
     background-color: rgba(248, 248, 248, 0);
     margin: 0px;
+    font-family: monospace;
 }
 .project{
     height: 1000px;
@@ -9,19 +10,28 @@ body{
     border: 1px solid red;
     position: relative;
 }
+.line{
+    border: 1px solid green;
+}
+.checkbox{
+    float: left;
+    width: 50px;
+    border: 1px solid red;
+    margin: 20px 0px 0px 191px;
+}
 .block{
     width: 500px;
     border: 1px solid green;
     margin: 0px auto;
-    height: 200px;
     margin-bottom: 10px;
+    padding-bottom: 12px;
 }
 .title{
     width: 200px;
     text-align: center;
     margin: 0px auto;
     font-size: 20px;
-    font-family: monospace;
+    padding-bottom: 10px;
 }
 img.add{
     border: 1px solid blue;
@@ -36,10 +46,24 @@ input.remove{
     margin: 0px auto;
 }
 textarea{
-    max-height: 100px;
-    max-width: 100px;
-    float: left;
     resize: none;
+    width: 462px;
+    margin: 0px auto;
+    min-height: 30px;
+    border: none;
+    border-bottom: 2px solid #f1f1f1;
+    background-color: #e7e7e729;
+    display: block;
+    padding: 9px 11px;
+    max-height: 200px;
+}
+textarea:focus{
+    border: none;
+    border-bottom: 2px solid #9edc9e;
+}
+textarea:active{
+    border: none;
+    border-bottom: 2px solid green;
 }
 .green{
     background-color: green;

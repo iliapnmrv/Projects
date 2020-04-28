@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoList</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="project" id="block">
-        <!--Примеры блоков--> 
-        <div class="block" id="one">
-            <div> 
-                <input class="" type="checkbox" id="scales" name="scales"  onclick="checkbox()">
-                <label for="scales">Scales</label>
+        <!--Примеры блоков-->
+        <div class="line">
+            <!--Checkbox block-->
+            <div class="checkbox"> 
+                <input type="checkbox" id="scales" name="scales"  onclick="checkbox()">
+                <!--<label for="scales">Scales</label>-->
             </div>
-            <div class="title">Я блок</div>
-            <textarea placeholder="Создайте заметку нажмите Alt + N для доступа к полю заполнения" accesskey="n" name="" id=""></textarea>
+            <!--1 задание-->
+            <div class="block" id="one">
+                <div class="title">Я блок</div>
+                <textarea placeholder="Создайте заметку нажмите Alt + N для доступа к полю заполнения" accesskey="n" name="" id=""></textarea>
+            </div>
         </div>
-        <!--Кнопка добавить-->        
+            <!--Кнопка добавить-->        
         <img class="add" src="img/add.png" alt="" title="Добавить еще" onclick="add()">
         <input type="button" class="" value="Удалить" onclick="remove()">
     </div>
     <script src="js/my.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </body>
 </html>
