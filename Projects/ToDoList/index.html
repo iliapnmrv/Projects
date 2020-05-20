@@ -1,36 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>ToDoList</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
-    <header class="banner">
-        <div class="center" id="show" >Продукт в ранней разработке</div>
+    <header class='banner'>
+        <div class='center' id='show' >Продукт в ранней разработке</div>
     </header>
-    <div class="project" id="block">
+    <div class='project' id='block'>
         <!--Примеры блоков-->
-        <div class="line">
-            <div id="one">
+        <div class='line'>
+            <div id='one'>
                 <!--Checkbox block-->
-                <label class="container">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
+                <label class='container'>
+                    <input type='checkbox'>
+                    <span class='checkmark'></span>
                 </label>
                 <!--1 задание-->
-                <div class="block">
-                    <div class="title">Я блок</div>
-                    <textarea placeholder="Создайте заметку нажмите Alt + N для доступа к полю заполнения" accesskey="n" name="" id=""></textarea>
-                </div>
+                <ol class='example' id='list'>
+                    <li>
+                        <div class='block'>
+                            <div class='title'>Я блок</div>
+                            <textarea class="textarea" placeholder='Создайте заметку нажмите Alt + N для доступа к полю заполнения' accesskey='n'></textarea>
+                        </div>
+                    </li>
+                </ol>
             </div>
         </div>
-            <!--Кнопка добавить-->        
-        <img class="add" src="img/add.png" alt="" title="Добавить еще" onclick="add()">
-        <input type="button" class="" value="Удалить" onclick="remove()">
+        <!--Кнопка добавить-->        
+        <img class='add' src='img/add.png' alt='' title='Добавить еще' onclick='add()'>
+        <input type='button' class='' value='Удалить' onclick='remove()'>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="js/my.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='js/sortable.js'></script>
+    <script src='js/my.js'></script>
+    
 </body>
 </html>

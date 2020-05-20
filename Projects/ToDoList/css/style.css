@@ -6,9 +6,10 @@ body{
 .project{
     width: 1000px;
     margin: 0px auto;
-    border: 1px solid red;
     position: relative;
     min-height: 1000px;
+    box-shadow: 5px 5px 12px 4px rgba(0, 0, 0, 0.27);
+    background-color: white;
 }
 .banner{
     position: sticky;
@@ -25,7 +26,7 @@ header div{
     padding: 5px 0px;
 }
 .line{
-    border: 1px solid green;
+
 }
 .checkbox{
     float: left;
@@ -34,24 +35,23 @@ header div{
     margin: 20px 0px 0px 191px;
 }
 .block{
-    width: 610px;
-    border: 1px solid green;
-    margin: 0px auto;
-    margin-bottom: 10px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #8c8c8c;
+  width: 610px;
+  margin: 0px auto;
+  border-bottom: 1px solid #8c8c8c;
+  padding-bottom: 5px;
+  padding-top: 10px;
 }
 .title{
     width: 200px;
     text-align: center;
     margin: 0px auto;
     font-size: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 img.add{
     border: 1px solid blue;
     width: 50px;
-    position: sticky;
+    position: fixed;
     top: 80%;
     left: 1310px;
 }
@@ -60,25 +60,48 @@ input.remove{
     margin: 0px auto;
 }
 textarea{
-    resize: none;
-    width: 462px;
-    margin: 0px auto;
-    min-height: 30px;
-    border: none;
-    border-bottom: 2px solid #f1f1f1;
-    background-color: #e7e7e729;
-    display: block;
-    padding: 9px 11px;
-    max-height: 200px;
+  resize: none;
+  width: 462px;
+  margin: 0px auto;
+  min-height: 30px;
+  border: none;
+  background-color: #fdfdfd;
+  display: block;
+  padding: 9px 11px;
+  max-height: 200px;
+  border-left: 1px solid black;
 }
-textarea:focus{
+/*textarea:focus{
     border: none;
     border-bottom: 2px solid #9edc9e;
 }
 textarea:active{
     border: none;
     border-bottom: 2px solid green;
-}
+}*/
+
+/* drag and drop start*/
+
+  body.dragging, body.dragging * {
+    cursor: move !important;
+  }
+
+  .dragged {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 2000;
+  }
+
+  ol.example li.placeholder {
+    position: relative;
+    /** More li styles **/
+  }
+  ol.example li.placeholder:before {
+    position: absolute;
+    /** Define arrowhead **/
+  }
+
+/* drag and drop end */
 
 /* Customize the label (the container) */
 .container {
