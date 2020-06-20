@@ -1,0 +1,10 @@
+.chapter1_element {
+    display: block;
+}
+  .chapter1_element.hide{
+    display: none;
+}
+
+#elements.hide{
+    display: none;
+}

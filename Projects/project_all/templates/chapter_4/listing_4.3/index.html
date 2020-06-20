@@ -1,0 +1,42 @@
+<!--Листинг 4.3-->
+<!--Свойства формы, в которой расположен переключатель-->
+
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <title>Данные из формы типа "переключатль". Событие Blur</title>
+        <script src = "js/my.js"></script>
+        <link rel = "stylesheet" href = "css/style.css">
+    </head>
+    <body bgcolor = "#FFDCDC">
+        <div class="project">
+            <form name="form1">
+                <div class="radio_buttons">
+                    Укажите форму витража
+                    <br>
+                    <!-- 0-ый элемент формы для языка програмирования JavaScript -->
+                    <input type="radio" name="fv" value="Прямоугольник" onfocus="test(form1.elements[0])">  <!-- 0-ой тэг input -->
+                    Прямоугольник
+                    <br>
+                    <!-- 1-ый элемент формы для языка програмирования JavaScript -->
+                    <input type="radio" name="fv" value="Квадрат" onfocus="test(form1.elements[1])">  <!-- 1-ой тэг input -->
+                    Квадрат
+                    <br>
+                    <!-- 2-ий элемент формы для языка програмирования JavaScript -->
+                    <input type="radio" name="fv" value="Треугольник" onfocus="test(form1.elements[2])"> <!-- 2-ый тэг input -->
+                    Треугольник
+                    <br>
+                    <!-- 3-ой элемент формы для языка програмирования JavaScript -->
+                    <input type="radio" name="fv" value="Круг" onfocus="test(form1.elements[3])">  <!-- 3-ий тэг input -->
+                    Круг
+                </div>
+                <hr>
+                <textarea name="res" cols="45" rows="5"></textarea>
+                <br>
+                <input type="reset" value="Отменить">   <!-- 5-ый тэг input -->
+            </form>
+        </div>
+    </body>
+</html>

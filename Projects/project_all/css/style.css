@@ -1,0 +1,181 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+header{
+    background-color: rgb(36, 36, 36);
+    height: 100px;
+    color: white;
+}
+h1{
+    margin: 0px;
+}
+a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+p{
+  margin: 0px;
+  padding: 0px;
+}
+.main{
+    position: absolute;
+    width: 100%;
+}
+.navbar {
+    float: left;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    width: 150px;
+    padding: 10px 12px;
+    overflow: hidden;
+}
+.all-links{
+    background-color: rgb(36, 36, 36);
+}
+
+.navbar .menu_element{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 14px 16px;
+  font-size: 20px;
+  margin: 3px 0px 3px;
+}
+
+/* меню выпадающий список */
+
+.dropdown {
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 7px 13px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    width: 150px;
+  }
+  
+  .dropdown .dropbtn .menu_element{
+    font-size: 15px;
+    display: block;
+    padding: 10px 0px 0px;
+  }
+  
+  .navbar .menu_element:hover, .dropdown:hover .dropbtn {
+    background-color: #ff8282;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    left: 144px;
+    top: 10px;
+}
+/* меню выпадающий список конец */
+
+/* оформление окна content */
+
+.content{
+  
+  margin-left: 176px;
+}
+.content .obivka{
+  max-width: 900px;
+  margin: 15px auto;
+  background-color: #fbfbfb;
+}
+.content h2 {
+  height: 43px;
+  padding: 24px 70px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.08);
+}
+.content .opisanie.upper{
+  min-height: 60px;
+  margin: 0px auto;
+}
+
+.content .opisanie p{
+  padding: 10px 36px;
+  font-size: 22px;
+}
+
+.content .element{
+  width: 200px;
+  min-height: 200px;
+  margin: 10px;
+  display: inline-block;
+  border: 1px solid #ff8282;
+}
+
+.element .chapter{
+  font-size: 17px;
+  color: #f9f9f9;
+  margin: 0px;
+  padding: 3px 9px 3px 0px;
+  float: right;
+}
+
+.content .element:hover{
+  transform: translate3d(0,-4px,0);
+  box-shadow: 0 12px 30px 0 rgba(0,0,0,.2);
+  transition-property: box-shadow,transform;
+  transition-duration: 600ms;
+  transition-timing-function: cubic-bezier(.16,1,.29,.99);
+}
+
+.element .title{
+  background-color: rgba(56, 56, 56, 0.82);
+  font-size: 20px;
+  min-height: 30px;
+  padding: 4px 10px;
+  text-align: center;
+  color: white;
+}
+.element .opisanie{
+  font-size: 16px;
+  padding: 1px 7px;
+}
+
+/* конец оформления окна content */
+
+.chapter_element {
+  display: block;
+}
+
+.chapter_element.hide{
+  display: none;
+}

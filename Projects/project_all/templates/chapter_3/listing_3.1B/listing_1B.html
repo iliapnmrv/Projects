@@ -1,0 +1,34 @@
+<!--Листинг 3.1 Б-->
+<!--Исследование свойств изображений-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Исследование свойств изображений</title>
+        <!-- <script src="js/my.js"></script> -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body bgcolor="#FFDCDC">
+        <div class="project">Встраиваемые изображения</h2>
+            <div class="pict">
+                <img src="gif/m1.gif" width="100">
+            </div>
+            <form name="form1">
+                Для изменения размеров изображения введите значения одного или двух параметров и нажмите кнопку <b>Просмотр</b>
+                <br>
+                Ширина: <input type="text" size="8" name="wd">
+                <hr>
+                Высота: <input type="text" size="8" name="hg">
+                <br>
+                Для задания рамки введите число, определяющее толщину рамки в пикселях, и нажмите на кнопку <b>Просмотр</b>
+                <br>
+                Толщина рамки (border): <input type="text" size="40" value="0">
+                Текст при наведении на картинку (title): <input type="text" size="40" name="al">
+                <input type="button" value="Просмотр" onclick="chpict1(form1)">
+                <input type="reset" value="Отменить">
+            </form>
+        </div>
+    </body>
+</html>

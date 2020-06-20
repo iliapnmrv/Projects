@@ -1,0 +1,43 @@
+<!--Листинг 4.1-->
+<!--Вычисление площади выбранной с помощью переключателя фигуры-->
+
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <title>Данные из формы типа "переключатль". Событие Click</title>
+        <script src = "js/my.js"></script>
+        <link rel = "stylesheet" href = "css/style.css">
+    </head>
+    <body bgcolor = "#FFDCDC">
+        <div class="project">
+            <form name="form1">
+                <h2>Введите значение</h2>
+                <!-- 0-ой элемент формы для языка програмирования JavaScript -->
+                <input type="text" name="data" value="1">   <!-- 1-ый тэг input -->
+                <hr>
+                Укажите форму
+                <br>
+                <!-- 1-ый элемент формы для языка програмирования JavaScript -->
+                <input type="radio" name="fv" value="1" onclick="test(form1.elements[1].value)">  <!-- 2-ой тэг input -->
+                Квадрат
+                <br>
+                <!-- 2-ой элемент формы для языка програмирования JavaScript -->
+                <input type="radio" name="fv" value="3.14" onclick="test(form1.elements[2].value)">  <!-- 3-ий тэг input -->
+                Круг
+                <br>
+                <!-- 3-ий элемент формы для языка програмирования JavaScript -->
+                <input type="radio" name="fv" value="0.42" onclick="test(form1.elements[3].value)"> <!-- 4-ый тэг input -->
+                Треугольник
+                <br>
+                <hr>
+                <!-- 4-ый элемент формы для языка програмирования JavaScript -->
+                <input type="reset" value="Отменить">   <!-- 5-ый тэг input -->
+
+                <!-- 5-ый элемент формы для языка програмирования JavaScript -->
+                Площадь: <input type="text" name="res" size="10">   <!-- 6-0й тэг input -->
+            </form>
+        </div>
+    </body>
+</html>

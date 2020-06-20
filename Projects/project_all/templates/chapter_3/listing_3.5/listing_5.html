@@ -1,0 +1,95 @@
+<!--Листинг 3.5-->
+<!--Нагрузка преподавателя с диаграммой-->
+
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <title>Простое горизонтальное меню</title>
+        <!-- <script src = "js/my.js"></script> -->
+        <link rel = "stylesheet" href = "css/style.css">
+    </head>
+    <body bgcolor = "#FFDCDC">
+        <center>
+            <h3>&quot; Нагрузка преподавателя&quot;</h3>
+            <small>
+                После заполнения соответствующих полей для того, чтобы увидеть диограмму, нажмите кнопку
+                <b>Вычислить</b>
+            </small>
+            <form name = "data">
+                <table bgcolor = "#cccccc" width = "300" cellPadding = "2" cellSpacing = "2" border = "1">
+                    <tr> 
+                        <td aling = "left">
+                            <b>Лекциии</b> 
+                            <small>(Часов)</small>
+                        </td>
+                        <td aling = "left"> 
+                            <input type = "text" name = "lec" size = "5" value = "" onchange = "CheckValHours(this.value)">
+                        </td>
+                    </tr> 
+                    <tr> 
+                        <td aling = "left">
+                            <b>Практика</b> 
+                            <small>(Часов)</small>
+                        </td>
+                        <td aling = "left"> 
+                            <input type = "text" name = "pract" size = "5" value = "" onchange = "CheckValHours(this.value)">
+                        </td>
+                    </tr> 
+                    <tr> 
+                        <td aling = "left">
+                            <b>Число студентов</b> 
+                            <small>(человек)</small>
+                        </td>
+                        <td aling = "left"> 
+                            <input type = "text" name = "stud" size = "5" value = "" onchange = "CheckValNum(this.value)">
+                        </td>
+                    </tr> 
+                    <tr> 
+                        <td aling = "left"> 
+                            <input type = "button" value = "Вычислить" onClick = "graph(data)">
+                        </td>
+                    </tr> 
+                </table>
+            </form>
+            <h4>Диаграмма нагрузки по вычисленным полям</h4>
+            <table width = "212" height = "190" cellPadding = "0" cellSpacing = "1" border = "0">
+                <tr valign = "bottom" width = "100" align = "center">
+                    <td bgcolor = "#aaa" height = "150">
+                        <img src = "gif/fon.jpg" width = "75" height = "0" border = "0" alt = "">
+                    </td>
+                    <td bgcolor = "#aaa" height = "150">
+                        <img src = "gif/fon.jpg" width = "75" height = "0" border = "0" alt = "">
+                    </td>
+                    <td bgcolor = "#aaa" height = "150">
+                        <img src = "gif/fon.jpg" width = "75" height = "0" border = "0" alt = "">
+                    </td>
+                    <td bgcolor = "#aaa" height = "150">
+                        <img src = "gif/fon.jpg" width = "75" height = "0" border = "0" alt = "">
+                    </td>
+                    <td bgcolor = "#aaa" height = "150">
+                        <img src = "gif/fon.jpg" width = "75" height = "0" border = "0" alt = "">
+                    </td>
+                </tr>
+                <tr valign = "top" align = "center" width = "100">
+                    <td height = "40">
+                        <small>Контрольная</small>
+                    </td>
+                    <td height = "40">
+                        <small>Зачет</small>
+                    </td>
+                    <td height = "40">
+                        <small>Консультация</small>
+                    </td>
+                    <td height = "40">
+                        <small>Экзамен</small>
+                    </td>
+                    <td height = "40">
+                        <small>Всего</small>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

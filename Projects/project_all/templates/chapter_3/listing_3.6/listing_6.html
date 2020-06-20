@@ -1,0 +1,89 @@
+<!--Листинг 3.6-->
+<!--Изменение толщины рамки и полей внутри ячейки таблицы-->
+
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <title>Таблицы, толщина рамки, ширина отступов</title>
+        <!-- <script src = "js/my.js"></script> -->
+        <link rel = "stylesheet" href = "css/style.css">
+    </head>
+    <body bgcolor = "#FFDCDC">
+        <div class="project">
+            <h2>Таблицы, границы, ширина отступов</h2>
+            <table id="itab" border="1" cellspacing="15" cellpadding="10">
+                <tr>
+                    <td bgcolor="white">
+                        <a href="img/ruins.jpg">
+                            <img src="img/ruins.jpg" border="0" width="120">
+                        </a>
+                    </td>
+                    <td bgcolor="white">
+                        <a href="img/city.jpg">
+                            <img src="img/city.jpg" border="0" width="120">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="white">
+                        <a href="img/nature.jpg">
+                            <img src="img/nature.jpg" border="0" width="120">
+                        </a>
+                    </td>
+                    <td bgcolor="white">
+                        <a href="img/house.jpg">
+                            <img src="img/house.jpg" border="0" width="120">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <p>Выберите значение параметров, которые требуется изменить, и нажмите кнопку <b>Выполнить</b></p>
+            <form name="form1">
+                <div class="table_on_div">
+                    <div class="row">
+                        <div class="data small">
+                            border
+                        </div>
+                        <div class="data input">
+                            <input type="text" name="bor" value="1"> 
+                        </div>
+                        <div class="data big">
+                            Толщина рамки
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="data small">
+                            cellspacing
+                        </div>
+                        <div class="data input">
+                            <input type="text" name="cells" value="15"> 
+                        </div>
+                        <div class="data big double">
+                            Ширина промежутка между ячейками
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="data small">
+                            cellpadding
+                        </div>
+                        <div class="data input">
+                            <input type="text" name="cellp" value="10"> 
+                        </div>
+                        <div class="data big">
+                            Поля внутри ячейки
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="input_bottom">
+                        <input type="button" value="Выполнить" onclick="set(form1)">
+                        <input type="reset" value="Обновить" onclick="rset(form1)">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!--Листинг 4.6-->
+<!--Обтекание текстом изображения-->
+
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <title>Изображение и текст. Обтекание</title>
+        <script src = "js/my.js"></script>
+        <link rel = "stylesheet" href = "css/style.css">
+    </head>
+    <body bgcolor = "#FFDCDC">
+        <div class="project">
+            <h4>Изображение и текст. Обтекание и отделение текста от изображения</h4>
+            <form name="form1">
+                <div class="radio_buttons">
+                    Выберите значение параметра выравнивания и введите значения отступов по горизонтали и вертикали, нажмите <b>кнопку</b>
+                    <br>
+                    <input type="radio" name="alg" value="ld" onchange="chpict(form1)">
+                    (left) <br> изображение выравнивается по левому краю
+                    <br>
+                    <input type="radio" name="alg" value="rd" onchange="chpict(form1)">
+                    (right) <br> изображение выравнивается по правому краю
+                    <br>
+                    Отступ по горизонтали (hspace)<input type="text" name="hsp" value="3" onchange="chpict(form1)">
+                    Треугольник
+                    <br>
+                    Отступ по вертикали (vspace)<input type="text" name="vsp" value="4" onchange="chpict(form1)"    >
+                    Круг
+                </div>
+                <hr>
+                <input type="button" value="Просмотр" onchange="chpict(form1)">
+                <input type="reset" value="Отменить" onclick="rset(form1)">
+                <br>
+                <table style="text-align: justify;">
+                    <tr>
+                        <td>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Laudantium aut ducimus obcaecati itaque temporibus expedita corrupti molestias minima aliquid harum commodi doloribus porro, non, illo quo ea dolor, magni placeat.
+                            <img src="img/house.jpg" name="mypict" align="left" alt="" border="3" width="310">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sed eius corporis aperiam atque ad animi. Accusantium quidem ducimus repellendus vero, consectetur voluptas nobis recusandae nam debitis modi doloremque vel.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente velit officia hic alias reprehenderit ducimus perferendis nemo laudantium nisi laborum, laboriosam voluptatem quos asperiores voluptas eos? Minima beatae neque reiciendis.
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

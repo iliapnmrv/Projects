@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>All_projects</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <link href='https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap' rel='stylesheet'>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script> 
+        $(function(){
+          $("#chapter_1").load("templates/chapter_1/chapter_1.html"); 
+          $("#chapter_2").load("templates/chapter_2/chapter_2.html"); 
+          $("#chapter_3").load("templates/chapter_3/chapter_3.html"); 
+          $("#chapter_4").load("templates/chapter_4/chapter_4.html");
+          $("#chapter_5").load("templates/chapter_5/chapter_5.html"); 
+          $("#chapter_6").load("templates/chapter_6/chapter_6.html"); 
+          $("#chapter_7").load("templates/chapter_7/chapter_7.html"); 
+          $("#chapter_8").load("templates/chapter_8/chapter_8.html");
+          $("#chapter_9").load("templates/chapter_9/chapter_9.html"); 
+          $("#chapter_10").load("templates/chapter_10/chapter_10.html"); 
+          $("#chapter_11").load("templates/chapter_11/chapter_11.html"); 
+          $("#chapter_12").load("templates/chapter_12/chapter_12.html"); 
+          $("#chapter_13").load("templates/chapter_13/chapter_13.html"); 
+          $("#chapter_14").load("templates/chapter_14/chapter_14.html");
+          $("#chapter_15").load("templates/chapter_15/chapter_15.html"); 
+          $("#chapter_16").load("templates/chapter_16/chapter_16.html"); 
+          $("#chapter_17").load("templates/chapter_17/chapter_17.html"); 
+          $("#chapter_18").load("templates/chapter_18/chapter_18.html");
+          $("#chapter_19").load("templates/chapter_19/chapter_19.html"); 
+          $("#chapter_20").load("templates/chapter_20/chapter_20.html"); 
+          $("#chapter_21").load("templates/chapter_21/chapter_21.html");
+        });
+    </script> 
+</head>
+<body>
+
+    <header>
+        <h1>Все проекты - All projects</h1>
+    </header>
+    <div class='main'>
+        <nav class='navbar'>
+            <div class='all-links'>
+                <div class='dropdown'>
+                    <button class='dropbtn'>
+                        <div class="menu_element" onclick="opisanie()">Краткое описание данного проекта</div>
+                    </button>
+                    <div class='dropdown-content'>
+                        <a href='#'>1.1</a>
+                        <a href='#'>1.2</a>
+                    </div>
+                </div>
+                <div class="menu_element" onclick="ShowHide('chapter_1')">1 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_2')">2 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_3')">3 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_4')">4 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_5')">5 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_6')">6 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_7')">7 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_8')">8 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_9')">9 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_10')">10 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_11')">11 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_12')">12 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_13')">13 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_14')">14 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_15')">15 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_16')">16 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_17')">17 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_18')">18 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_19')">19 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_20')">20 глава</div>
+                <div class="menu_element" onclick="ShowHide('chapter_21')">21 глава</div>
+                <div class="menu_element" onclick="ShowHide()">Github проекты</div>
+            </div>
+        </nav>
+        <div class='content'>
+            <div class='obivka'>
+                <div id="soderzhimoe">
+                    Выберите, пожалуйста, номер главы
+                    <div class="chapter_element" id="chapter_1"></div>
+                    <div class="chapter_element hide" id="chapter_2"></div>
+                    <div class="chapter_element hide" id="chapter_3"></div>
+                    <div class="chapter_element hide" id="chapter_4"></div>
+                    <div class="chapter_element hide" id="chapter_5"></div>
+                    <div class="chapter_element hide" id="chapter_6"></div>
+                    <div class="chapter_element hide" id="chapter_7"></div>
+                    <div class="chapter_element hide" id="chapter_8"></div>
+                    <div class="chapter_element hide" id="chapter_9"></div>
+                    <div class="chapter_element hide" id="chapter_10"></div>
+                    <div class="chapter_element hide" id="chapter_11"></div>
+                    <div class="chapter_element hide" id="chapter_12"></div>
+                    <div class="chapter_element hide" id="chapter_13"></div>
+                    <div class="chapter_element hide" id="chapter_14"></div>
+                    <div class="chapter_element hide" id="chapter_15"></div>
+                    <div class="chapter_element hide" id="chapter_16"></div>
+                    <div class="chapter_element hide" id="chapter_17"></div>
+                    <div class="chapter_element hide" id="chapter_18"></div>
+                    <div class="chapter_element hide" id="chapter_19"></div>
+                    <div class="chapter_element hide" id="chapter_20"></div>
+                    <div class="chapter_element hide" id="chapter_21"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

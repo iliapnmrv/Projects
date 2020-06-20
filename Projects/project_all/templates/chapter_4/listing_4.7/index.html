@@ -1,0 +1,52 @@
+<!--Листинг 4.7-->
+<!--Расположение изображения относительно строки-->
+
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <title>Расположение изображения относительно строки</title>
+        <script src = "js/my.js"></script>
+        <link rel = "stylesheet" href = "css/style.css">
+    </head>
+    <body bgcolor = "#FFDCDC">
+        <div class="project">
+            <h2>Расположение изображения относительно строки</h2>
+            Выберите значение параметра, который Вас интересует
+            <div>
+                <div>
+                    <div align="center"><h4>Значения параметра выравнивания align</h4></div>
+                    <div align="center"><h4>Действия при выбранном значении параметра</h4></div>
+                </div>
+                <div>
+                    <div>
+                        <form name="form">
+                            <input type="radio" name="ln" value="0" onfocus="set(form.elements[0])">
+                            top
+                            <br>
+                            <input type="radio" name="ln" value="1" onfocus="set(form.elements[1])">
+                            texttop
+                            <br>
+                            <input type="radio" name="ln" value="2" onfocus="set(form.elements[2])">
+                            middle
+                            <br>
+                            <input type="radio" name="ln" value="3" onfocus="set(form.elements[3])">
+                            absmiddle
+                            <br>
+                            <input type="radio" name="ln" value="4" onfocus="set(form.elements[4])">
+                            bottom или baseline
+                            <br>
+                            <input type="radio" name="ln" value="5" onfocus="set(form.elements[5])">
+                            absbottom
+                            <br>
+                        </form>
+                    </div>
+                    <div>
+                        <textarea name="res" id="Textarea" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

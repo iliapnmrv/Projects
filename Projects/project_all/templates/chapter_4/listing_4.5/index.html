@@ -1,0 +1,39 @@
+<!--Листинг 4.5-->
+<!--Уникальные имена-->
+
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+        <title>Данные, представленные переключателем. Идентификаторы</title>
+        <script src = "js/my.js"></script>
+        <link rel = "stylesheet" href = "css/style.css">
+    </head>
+    <body bgcolor = "#FFDCDC">
+        <div class="project">
+            <form name="form1">
+                <div class="radio_buttons">
+                    Выберите форму витража
+                    <br>
+                    <input type="radio" name="fv" value="1" id="i1">
+                    Прямоугольник
+                    <br>
+                    <input type="radio" name="fv" value="2" id="i2">
+                    Квадрат
+                    <br>
+                    <input type="radio" name="fv" value="3" id="i3">
+                    Треугольник
+                    <br>
+                    <input type="radio" name="fv" value="4" id="i4">
+                    Круг
+                </div>
+                <hr>
+                <input type="button" value="Выполнить" onclick="vid()">
+                <input type="reset" value="Отменить">
+                <br>
+                Результат: <input type="text" name="res" id="resch">
+            </form>
+        </div>
+    </body>
+</html>

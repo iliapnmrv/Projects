@@ -1,0 +1,82 @@
+<h2>Третья глава</h2>
+<div class='opisanie upper'>
+    <p>Здесь описание главы в целом</p>
+</div>
+<div id="elements" class="">
+    <div class="element">
+      <div class="title">
+        <a href="#" onclick="ShowHideListing('listing_1')">1 листинг</a>
+      </div>
+      <div class="opisanie">Описание и фотография главы</div>
+    </div>
+    <div class="element">
+      <div class="title">
+        <a href="#" onclick="ShowHideListing('listing_1B')">1 листинг
+            <div class="chapter">часть 2</div>
+        </a>
+      </div>
+      <div class="opisanie">Описание и фотография главы</div>
+    </div>
+    <div class="element">
+      <div class="title">
+        <a href="#" onclick="ShowHideListing('listing_2')">2 листинг</a>
+      </div>
+      <div class="opisanie">Описание и фотография главы</div>
+    </div>
+    <div class="element">
+      <div class="title">
+        <a href="#" onclick="ShowHideListing('listing_3')">3 листинг </a>
+      </div>
+      <div class="opisanie">Описание и фотография главы</div>
+    </div>
+    <div class="element">
+      <div class="title">
+        <a href="#" onclick="ShowHideListing('listing_4')">4 листинг </a>
+      </div>
+      <div class="opisanie">Описание и фотография главы</div>
+    </div>
+    <div class="element">
+      <div class="title">
+        <a href="#" onclick="ShowHideListing('listing_5')">5 листинг</a>
+      </div>
+      <div class="opisanie">Описание и фотография главы</div>
+    </div>
+    <div class="element">
+      <div class="title">
+        <a href="#" onclick="ShowHideListing('listing_6')">6 листинг</a>
+      </div>
+      <div class="opisanie">Описание и фотография главы</div>
+    </div>
+</div>
+
+<div class="chapter3_element hide" id="listing_1"></div>
+<div class="chapter3_element hide" id="listing_1B"></div>
+<div class="chapter3_element hide" id="listing_2"></div>
+<div class="chapter3_element hide" id="listing_3"></div>
+<div class="chapter3_element hide" id="listing_4"></div>
+<div class="chapter3_element hide" id="listing_5"></div>
+<div class="chapter3_element hide" id="listing_6"></div>
+
+
+
+<script>
+  $(function(){
+    $("#listing_1").load("templates/chapter_3/listing_3.1/listing_1.html"); 
+    $("#listing_1B").load("templates/chapter_3/listing_3.1B/listing_1B.html"); 
+    $("#listing_3").load("templates/chapter_3/listing_3.2/listing_2.html"); 
+    $("#listing_3").load("templates/chapter_3/listing_3.3/listing_3.html"); 
+    $("#listing_4").load("templates/chapter_3/listing_3.4/listing_4.html");
+    $("#listing_5").load("templates/chapter_3/listing_3.5/listing_5.html"); 
+    $("#listing_6").load("templates/chapter_3/listing_3.6/listing_6.html"); 
+  });
+</script>
+
+<!-- Подключение скриптов -->
+
+<script src="templates/chapter_3/js/script.js"></script>
+
+<!-- Подключение стилей -->
+
+<style type="text/css">   
+  @import url("templates/chapter_3/css/style.css"); 
+</style>
