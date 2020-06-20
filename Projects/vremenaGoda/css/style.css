@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(67, 214, 207);
+    background-color: rgb(216, 238, 255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0px;
 }
@@ -9,14 +9,19 @@ body{
     margin: 0px auto;
     margin-top: 100px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background-color: black;
-    color: white;
+    background-color: #ebb7d6;
+    color: #444444;
 }
 h2{
     margin: 0px auto;
     width: 149px;
+    padding-top: 10px;
 }
-.time{
-    margin-left: 76px;
-    font-size: 10px;
+.data{
+    margin: 20px 0px 0px 40px;
+    font-size: 20px;
+    float: left;
+}
+#time{
+    display: inline-block;
 }

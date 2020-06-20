@@ -7,16 +7,18 @@
         <script src="js/jquery.js"></script>
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body bgcolor="#FFDCDC">
+    <body onLoad = 'startTime()'>
         <div class="daynight">
             <div class="block">
                 <div class="data" id="time"></div>
-                <div class="name data">Илья</div>
-                <!--<div class="data" id="hour"></div>
-                <div class="data" id="minutes"></div>
-                <div class="data" id="times"></div>-->
+                <div class="name data"></div>
+            </div>
+            <div class="block time_now">
+                <div class="data">Время сейчас -<span id="timer"></span></div>
             </div>
         </div>
         <script src="js/my.js"></script>
     </body>
 </html>
+
+  <b>Время на сайте: <span id="time"></span></b>
